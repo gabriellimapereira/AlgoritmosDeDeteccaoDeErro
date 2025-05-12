@@ -12,7 +12,6 @@ def adicionaBit(msg, bitsUm):
     
 def verificaParidade(msg, msg_result):
     if ((msg & 1) == (msg_result & 1)):
-        print("houve erro!")
+        return False
     else:
-        print("a mensagem não sofreu alteração")
-
+        return True
